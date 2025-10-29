@@ -70,6 +70,8 @@ extension CoinRowView {
         .frame(width: UIScreen.main.bounds.width / 3)
     }
 }
+
+
 struct CoinRowView_Previews: PreviewProvider {
     static var previews: some View {
         Group {

@@ -52,15 +52,20 @@ import Foundation
    }
  */
 
-
 struct CoinModel: Codable, Identifiable {
     let id, symbol, name: String?
     let image: String?
     let marketCapRank: Int?
     let currentPrice, marketCap, fullyDilutedValuation: Double?
-    let totalVolume, high24H, low24H: Int?
+    
+    let totalVolume: Double?
+    let high24H, low24H: Double?
+    
     let priceChange24H, priceChangePercentage24H, marketCapChange24H, marketCapChangePercentage24H: Double?
-    let circulatingSupply, totalSupply, maxSupply, ath: Int?
+    
+    let circulatingSupply, totalSupply, maxSupply: Double?
+    
+    let ath: Double?
     let athChangePercentage: Double?
     let athDate: String?
     let atl, atlChangePercentage: Double?

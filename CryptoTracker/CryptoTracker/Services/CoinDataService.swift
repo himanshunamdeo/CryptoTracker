@@ -18,7 +18,7 @@ class CoinDataService {
         getCoins()
     }
     
-    private func getCoins() {
+    func getCoins() {
         guard let url = URL(string: "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin&names=Bitcoin&symbols=btc&category=layer-1&price_change_percentage=24h&per_page=250&page=1&order=market_cap_desc&sparkline=true") else { return }
         
         coinSubscription = NetworkingManager.download(url: url)
